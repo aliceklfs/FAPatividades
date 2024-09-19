@@ -1,0 +1,60 @@
+/* DEfinindo o estilo básico para o corpo da pagina*/
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(68, 68, 68);
+    margin: 0;
+}
+
+/*Estiizando o conteiner da calculadora*/
+.calculadora{
+    background-color: rgb(221, 221, 221);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgba(0,0,0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 350px;
+    height: 600px;
+}
+
+/*visor*/
+input {
+    grid-column: span 4;
+    height: 100px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid #ececec;
+    border-radius: 5px;
+    background-color:  rgb(221, 221, 221);
+}
+
+button,.botaoVerde, .botaoOperadores {
+    background-color: rgb(255, 255, 255);
+    color:black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    border: none;
+    border-radius: 80%;
+    cursor: pointer;
+}
+.botaoLimparVisor{
+    color: red
+}
+.botaoVerde {
+    background-color: rgb(3, 197, 68);
+    color: white;
+}
+
+.botaoOperadores{
+    background-color: #c7c6c6;
+    color:rgb(3, 197, 68);
+}
