@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.calc{
+    width: 400px;
+    padding: .5em;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: black;
+}
+
+.visor{
+    text-align: right;
+    height: 16em;
+    padding-top: .8em;
+
+}
+
+.operacoes-anteriores, .operacoes-digitadas {
+    min-height: 1.6em; /*PREVER ALTURA DOS NUMEROS */
+    overflow-wrap: break-word; /*QUEBRA A LINHA PARA O NUMERO N PASSAR DA CALCULADORA*/
+    padding: .3em;
+}
+.operacoes-anteriores {
+    color: rgb(80, 80, 80);
+    
+}
+
+.operacoes-digitadas {
+    font-size: 3em;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+}
+
+.container-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+button {
+    border: 1px solid transparent;
+    border-radius: 100%;
+    height: 3.1em;
+    font-size: 1.8em;
+    font-weight: 700;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+.botao-excluir{
+    color: red;
+    background-color: rgb(214, 214, 214);
+}
+
+.botao-operadores{
+    color:  rgb(11, 175, 11);
+    background-color: rgb(214, 214, 214);
+}
+
+.botao-igual{
+    color: white;
+    background-color: rgb(11, 175, 11);
+    cursor: pointer;
+}
+
+.botao-apagarCaractere{
+    background-color: rgb(224, 224, 224);
+    color:  rgb(11, 175, 11);
+    margin-right: 0.8em;
+    font-size: 1.2em;
+}
+
+.botao-numeros, .botao-virgula,.botao-negativo {
+    background-color:  rgba(255, 255, 255, 0.274);
+}
+
+/*HOVER*/
+.botao-numeros:hover, .botao-virgula:hover,.botao-negativo:hover,.botao-operadores:hover, .botao-excluir:hover {
+    background-color: rgba(129, 128, 128, 0.274);
+}
+
+.botao-igual:hover {
+    background-color: green;
+}
